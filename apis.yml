@@ -1,8 +1,24 @@
 aid: wetpaint
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wetpaint.png
 name: Wetpaint
-description: 'Wetpaint is a company surfaced as a portfolio company of trinity-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: media. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Wetpaint is a media brand operating wetpaint.com, an entertainment and lifestyle
+  publication covering Hollywood gossip, celebrity news, TV series recaps and buzz, and pop-culture
+  storytelling. Originally a Trinity Ventures-backed wiki/collaborative-media startup, the property
+  today runs as an ad- and affiliate-supported editorial content site with no public developer
+  program: as of this enrichment pass it exposes no documented API, developer portal, SDKs,
+  or /.well-known discovery surface. This profile is retained in the API Evangelist network as a
+  media-sector company record.'
 url: https://raw.githubusercontent.com/api-evangelist/wetpaint/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +28,26 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Media
+- Entertainment
+- Celebrity
+- Television
+- Pop Culture
+- Publishing
+common:
+- type: DomainSecurity
+  url: security/wetpaint-domain-security.yml
+- type: Website
+  url: https://www.wetpaint.com/
 apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
